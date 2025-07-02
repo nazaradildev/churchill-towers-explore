@@ -6,12 +6,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'الرئيسية', href: '/' },
-    { name: 'استئجار', href: '/rent' },
-    { name: 'البرج', href: '/tower' },
-    { name: 'وسائل الراحة', href: '/amenities' },
-    { name: 'الموقع', href: '/location' },
-    { name: 'اتصل بنا', href: '/contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Rent', href: '/rent' },
+    { name: 'Tower', href: '/tower' },
+    { name: 'Amenities', href: '/amenities' },
+    { name: 'Location', href: '/location' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-heading font-bold">
-              أبراج <span className="text-accent">شيرشل</span>
+              Churchill <span className="text-accent">Towers</span>
             </h1>
             <div className="hidden md:block ml-3 text-sm text-muted-foreground">
               by ENI
@@ -59,7 +59,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="btn-accent">
-              احجز معاينة
+            Book Viewing
             </Button>
           </div>
 
@@ -87,7 +87,7 @@ const Header = () => {
                 </a>
               ))}
               <Button className="btn-accent mt-4 w-full">
-                احجز معاينة
+                Book Viewing
               </Button>
             </nav>
           </div>

@@ -19,35 +19,35 @@ const Hero = () => {
           {/* ENI Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-8">
             <Star className="w-5 h-5 text-accent" />
-            <span className="text-sm font-medium">معتمد من الإمارات الوطنية للاستثمار</span>
+            <span className="text-sm font-medium">Certified by Emirates National Investment</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-hero mb-6 leading-tight">
-            اكتشف منزلك الفاخر في
+            Discover Your Luxury Home in
             <br />
-            <span className="text-accent">أبراج شيرشل</span>
+            <span className="text-accent">Churchill Towers</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            تجربة استئجار لا مثيل لها في قلب الخليج التجاري مع إطلالات خلابة على برج خليفة وقناة دبي المائية
+            Unparalleled rental experience in the heart of Business Bay with stunning views of Burj Khalifa and Dubai Water Canal
           </p>
 
           {/* Location */}
           <div className="flex items-center justify-center gap-2 mb-10 text-white/80">
             <MapPin className="w-5 h-5" />
-            <span className="text-lg">الخليج التجاري، دبي</span>
+            <span className="text-lg">Business Bay, Dubai</span>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <Button size="lg" className="btn-accent w-full sm:w-auto text-lg px-8 py-3">
-              <Search className="w-5 h-5 mr-2 ml-0" />
-              ابحث عن منزلك
+              <Search className="w-5 h-5 mr-2" />
+              Find Your Home
             </Button>
             <Button size="lg" variant="outline" className="btn-ghost w-full sm:w-auto text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-primary">
-              احجز معاينة
+              Book Viewing
             </Button>
           </div>
 
@@ -55,15 +55,15 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-8 mt-16 text-center">
             <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">618</div>
-              <div className="text-sm md:text-base text-white/80">وحدة سكنية</div>
+              <div className="text-sm md:text-base text-white/80">Residential Units</div>
             </div>
             <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">45</div>
-              <div className="text-sm md:text-base text-white/80">طابق</div>
+              <div className="text-sm md:text-base text-white/80">Floors</div>
             </div>
             <div className="animate-fade-up" style={{ animationDelay: '0.6s' }}>
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">15+</div>
-              <div className="text-sm md:text-base text-white/80">مرفق متميز</div>
+              <div className="text-sm md:text-base text-white/80">Premium Amenities</div>
             </div>
           </div>
         </div>

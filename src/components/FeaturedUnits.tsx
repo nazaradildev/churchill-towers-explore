@@ -8,40 +8,40 @@ const FeaturedUnits = () => {
   const featuredProperties = [
     {
       id: 1,
-      title: 'بنتهاوس فاخر - الطابق 45',
+      title: 'Luxury Penthouse - 45th Floor',
       price: 'AED 350,000',
-      period: 'سنوياً',
+      period: 'per year',
       bedrooms: 4,
       bathrooms: 5,
       area: 3200,
-      view: 'إطلالة على برج خليفة',
-      features: ['مجدد حديثاً', 'طابق مرتفع', 'مفروش بالكامل'],
+      view: 'Burj Khalifa View',
+      features: ['Recently Renovated', 'High Floor', 'Fully Furnished'],
       image: luxuryApartment,
       isNew: true,
     },
     {
       id: 2,
-      title: 'شقة عصرية - غرفتين نوم',
+      title: 'Modern 2-Bedroom Apartment',
       price: 'AED 180,000',
-      period: 'سنوياً',
+      period: 'per year',
       bedrooms: 2,
       bathrooms: 3,
       area: 1650,
-      view: 'إطلالة على القناة',
-      features: ['مناسب للعائلات', 'إطلالة مائية', 'تشطيبات عالية'],
+      view: 'Canal View',
+      features: ['Family Friendly', 'Water View', 'Premium Finishes'],
       image: luxuryApartment,
       isNew: false,
     },
     {
       id: 3,
-      title: 'ستوديو راقي مع بلكونة',
+      title: 'Premium Studio with Balcony',
       price: 'AED 95,000',
-      period: 'سنوياً',
+      period: 'per year',
       bedrooms: 1,
       bathrooms: 1,
       area: 750,
-      view: 'إطلالة على المدينة',
-      features: ['صديق للميزانية', 'مثالي للشباب', 'تصميم ذكي'],
+      view: 'City View',
+      features: ['Budget Friendly', 'Perfect for Young Professionals', 'Smart Design'],
       image: luxuryApartment,
       isNew: false,
     },
@@ -53,10 +53,10 @@ const FeaturedUnits = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-section text-primary mb-4">
-            الوحدات المميزة
+            Featured Units
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            اكتشف مجموعة مختارة من أفضل الوحدات المتاحة في أبراج شيرشل مع مواصفات استثنائية وإطلالات خلابة
+            Discover a curated selection of the finest available units in Churchill Towers with exceptional specifications and breathtaking views
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const FeaturedUnits = () => {
                 {/* Overlay badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {property.isNew && (
-                    <Badge className="bg-accent text-accent-foreground">جديد</Badge>
+                    <Badge className="bg-accent text-accent-foreground">New</Badge>
                   )}
                   <Badge variant="secondary" className="bg-black/50 text-white border-none">
                     {property.view}
@@ -118,7 +118,7 @@ const FeaturedUnits = () => {
                   </div>
                   <div className="flex items-center gap-1">
                     <Square className="w-4 h-4" />
-                    <span>{property.area.toLocaleString()} قدم²</span>
+                    <span>{property.area.toLocaleString()} sq ft</span>
                   </div>
                 </div>
 
@@ -133,7 +133,7 @@ const FeaturedUnits = () => {
 
                 {/* CTA Button */}
                 <Button className="w-full btn-accent">
-                  عرض التفاصيل
+                  View Details
                 </Button>
               </CardContent>
             </Card>
@@ -143,7 +143,7 @@ const FeaturedUnits = () => {
         {/* View All Button */}
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" className="btn-ghost">
-            عرض جميع الوحدات المتاحة
+            View All Available Units
           </Button>
         </div>
       </div>
